@@ -1,0 +1,29 @@
+<div class="container text-center padded">
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6">
+      <blockquote>
+        <h1>
+          <%= @question %>
+        </h1>
+        <h3>- You</h3>
+      </blockquote>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6">
+      <blockquote>
+        <% if @question.include? "?" %>
+          <h1>
+            Silly question, get dressed and go to work!
+          </h1>
+        <% else %>
+          <h1>
+            I don't care, get dressed and go to work!
+          </h1>
+        <% end %>
+        <h3>- Your coach</h3>
+      </blockquote>
+    </div>
+  </div>
+</div>
